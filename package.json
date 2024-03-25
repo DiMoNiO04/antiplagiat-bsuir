@@ -14,7 +14,7 @@
     "cache": "gulp cache",
     "backend": "gulp backend",
     "zip": "gulp zip",
-    "format": "npx eslint ./src/js/scripts --fix && npx prettier . --write"
+    "format": "npx eslint ./src/js --fix && npx prettier . --write"
   },
   "author": "Dmitriy Razumov",
   "license": "ISC",
