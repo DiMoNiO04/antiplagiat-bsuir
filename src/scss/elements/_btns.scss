@@ -1,0 +1,15 @@
+.btn {
+  border-radius: 8px;
+  @include bold18;
+  transition: background-color 0.3s ease;
+  @include flexCenter;
+}
+
+.btn-def {
+  color: $white;
+  background-color: $blue200;
+
+  @include hover {
+    background-color: $blue250;
+  }
+}

@@ -1,0 +1,9 @@
+.header {
+  background: $blueGradient;
+  height: 70px;
+
+  &__container {
+    @include flexCenterBetween;
+    padding: 21px 0;
+  }
+}
