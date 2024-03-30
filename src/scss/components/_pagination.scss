@@ -1,0 +1,27 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+
+  &__btn {
+    @include sizes(24px, 24px);
+
+    @include hover {
+      svg {
+        stroke: $blue300;
+      }
+    }
+
+    svg {
+      fill: none;
+      stroke: $blue400;
+      @include transition(stroke);
+    }
+  }
+
+  &__numbers {
+    span {
+      @include medium14;
+    }
+  }
+}

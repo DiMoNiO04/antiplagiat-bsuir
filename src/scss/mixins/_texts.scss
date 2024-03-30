@@ -46,6 +46,12 @@
   line-height: 30px;
 }
 
+@mixin medium14 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
 @mixin regular24 {
   font-size: 24px;
   font-weight: 400;

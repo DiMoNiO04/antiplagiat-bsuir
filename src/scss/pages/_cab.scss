@@ -1,6 +1,23 @@
 .cab {
   width: 100%;
 
+  &--cab {
+    .cab__header {
+      grid-template-columns: 41% 15% 7% 37%;
+    }
+  }
+
+  &--role {
+    .cab__header {
+      grid-template-columns: 7.5% 35.5% 57%;
+    }
+
+    .cab__desc-content {
+      width: 53%;
+      margin: 0 0 0 auto;
+    }
+  }
+
   &__block {
     background-color: $blue200;
     border-radius: 8px;
@@ -23,7 +40,7 @@
         @include hidden;
       }
 
-      .cab__desc {
+      .cab__desc-content {
         justify-content: flex-end;
       }
     }
@@ -39,7 +56,7 @@
     border-bottom: 1px solid $blue400;
     padding: 10px 25px;
     display: grid;
-    grid-template-columns: 43% 16% 9% 32%;
+    column-gap: 20px;
 
     div {
       @include bold16;
@@ -47,7 +64,7 @@
   }
 
   &__content {
-    height: 594px;
+    min-height: 594px;
     border-bottom: 1px solid $blue400;
   }
 
@@ -67,9 +84,12 @@
   }
 
   &__desc {
-    @include flexCenterBetween;
-    padding: 8px 0;
     background-color: $blue50;
+    padding: 8px 0;
+  }
+
+  &__desc-content {
+    @include flexCenterBetween;
     column-gap: 20px;
   }
 
