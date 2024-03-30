@@ -1,23 +1,99 @@
 .cab {
+  width: 100%;
+
   &__block {
-    background-color: $blue50;
+    background-color: $blue200;
     border-radius: 8px;
 
     &:not(:last-child) {
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     &:first-child {
       @include flexCenterBetween;
-      padding: 25px 30px;
+      padding: 17px 30px;
+    }
+
+    &.--no-docs {
+      .cab__content-none {
+        display: flex;
+      }
+
+      .cab__desc-notify {
+        @include hidden;
+      }
+
+      .cab__desc {
+        justify-content: flex-end;
+      }
     }
   }
 
-  &__title {
-    color: $blue300;
+  &__search {
+    padding: 20px 25px;
   }
 
-  &__search {
-    padding: 20px;
+  &__header {
+    background-color: $blue50;
+    border-top: 1px solid $blue400;
+    border-bottom: 1px solid $blue400;
+    padding: 10px 25px;
+    display: grid;
+    grid-template-columns: 43% 16% 9% 32%;
+
+    div {
+      @include bold16;
+    }
+  }
+
+  &__content {
+    height: 594px;
+    border-bottom: 1px solid $blue400;
+  }
+
+  &__content-none {
+    @include flexCenter;
+    @include fullSize;
+    display: none;
+  }
+
+  &__content-none-msg {
+    background-color: $blue50;
+    margin: auto;
+    padding: 46px 112px;
+    border-radius: 10px;
+    color: $grey200;
+    @include medium26;
+  }
+
+  &__desc {
+    @include flexCenterBetween;
+    padding: 8px 0;
+    background-color: $blue50;
+    column-gap: 20px;
+  }
+
+  &__desc-count {
+    @include bold16;
+    flex-shrink: 0;
+  }
+
+  &__desc-notify {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    @include visible;
+    transition:
+      opacity 0.2s ease,
+      transition 0.2s ease;
+
+    svg {
+      @include sizes(24px, 24px);
+      fill: $red200;
+    }
+
+    p {
+      @include regular16;
+    }
   }
 }

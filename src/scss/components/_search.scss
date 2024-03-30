@@ -3,15 +3,15 @@
   width: 544px;
 
   &__input {
-    background-color: $blue200;
+    background-color: $blue50;
     border-radius: 10px;
-    padding: 8.5px 45px;
+    padding: 10px 35px;
     @include flexCenterBetween;
     cursor: pointer;
     border: 1px solid transparent;
     @include transition(border-color);
-    color: $blue300;
-    @include semibold18;
+    color: $blue400;
+    @include regular14;
     width: 100%;
 
     &::placeholder {
@@ -19,19 +19,23 @@
     }
 
     &:focus {
-      border-color: $blue200;
+      border-color: $blue400;
+    }
+
+    &:focus ~ .search__btn svg {
+      stroke: $blue400;
     }
   }
 
   &__btn {
     @include sizes(16px, 16px);
     position: absolute;
-    top: 12.5px;
-    left: 25px;
+    top: calc(50% - 8px);
+    left: 15px;
 
     @include hover {
       svg {
-        stroke: $blue300;
+        stroke: $blue400;
       }
     }
 

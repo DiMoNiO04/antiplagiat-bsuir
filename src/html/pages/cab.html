@@ -5,20 +5,46 @@
         <div class="cab__block">
           <h1 class="cab__title title">Кабинет</h1>
           <button class="cab__btn btn btn-def" type="button">
-            <img src="../assets/img/paper.svg" alt="" />
-            Проверить
+            <svg>
+              <use xlink:href="assets/img/sprite.svg#paper"></use>
+            </svg>
+            Проверить документ
           </button>
         </div>
-        <div class="cab__block">
+        <div class="cab__block --no-docs">
           <div class="cab__search">
             <form action="" id="search-docs" class="cab__search-form search">
+              <input autocomplete="off" type="text" class="search__input" placeholder="Поиск по названию документа" />
               <button type="submit" form="search-docs" class="search__btn">
                 <svg>
                   <use xlink:href="assets/img/sprite.svg#search"></use>
                 </svg>
               </button>
-              <input autocomplete="off" type="text" class="search__input" placeholder="Поиск по названию документа" />
             </form>
+          </div>
+          <div class="cab__header">
+            <div>Название</div>
+            <div>Статус</div>
+            <div>Время</div>
+            <div>Оригинальность</div>
+          </div>
+          <div class="cab__content">
+            <!--Если документов нету-->
+            <div class="cab__content-none">
+              <div class="cab__content-none-msg">Документы отсутствуют</div>
+            </div>
+          </div>
+          <div class="cab__desc">
+            <div class="cab__desc-notify">
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#input-error"></use>
+              </svg>
+              <p>
+                Загруженные материалы хранятся в кабинете 7 дней, после чего, за исключением отправленных на защиту,
+                удаляются!
+              </p>
+            </div>
+            <div class="cab__desc-count">0 Документов</div>
           </div>
         </div>
       </div>

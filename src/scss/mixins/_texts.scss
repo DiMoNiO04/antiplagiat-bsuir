@@ -22,6 +22,12 @@
   line-height: 19.36px;
 }
 
+@mixin semibold26 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
 @mixin semibold18 {
   font-size: 18px;
   font-weight: 600;
@@ -32,6 +38,12 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 16.94px;
+}
+
+@mixin medium26 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 30px;
 }
 
 @mixin regular24 {
@@ -49,13 +61,13 @@
 @mixin regular16 {
   font-size: 16px;
   font-weight: 400;
-  line-height: 19.36px;
+  line-height: 20px;
 }
 
 @mixin regular14 {
   font-size: 14px;
   font-weight: 400;
-  line-height: 19.36px;
+  line-height: 20px;
 }
 
 @mixin light300 {
