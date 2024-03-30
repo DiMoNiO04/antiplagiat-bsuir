@@ -168,9 +168,6 @@ fieldset {
 main {
   margin: 50px 0 25px;
   flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 @media screen and (max-width: $tablet) {
