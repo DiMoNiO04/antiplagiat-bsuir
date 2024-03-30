@@ -1,19 +1,19 @@
 @mixin bold36 {
   font-size: 36px;
   font-weight: 700;
-  line-height: 43.57px;
+  line-height: 50px;
 }
 
 @mixin bold26 {
   font-size: 26px;
   font-weight: 700;
-  line-height: 31.47px;
+  line-height: 30px;
 }
 
 @mixin bold18 {
   font-size: 18px;
   font-weight: 700;
-  line-height: 21.78px;
+  line-height: 22px;
 }
 
 @mixin bold16 {
@@ -25,19 +25,13 @@
 @mixin semibold18 {
   font-size: 18px;
   font-weight: 600;
-  line-height: 21.78px;
+  line-height: 22px;
 }
 
 @mixin semibold14 {
   font-size: 14px;
   font-weight: 600;
   line-height: 16.94px;
-}
-
-@mixin medium18 {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 21.78px;
 }
 
 @mixin regular24 {
@@ -49,7 +43,7 @@
 @mixin regular18 {
   font-size: 18px;
   font-weight: 400;
-  line-height: 21.78px;
+  line-height: 22px;
 }
 
 @mixin regular16 {
@@ -67,5 +61,5 @@
 @mixin light300 {
   font-size: 14px;
   font-weight: 300;
-  line-height: 16.94px;
+  line-height: 18px;
 }

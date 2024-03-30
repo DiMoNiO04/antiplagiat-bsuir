@@ -1,0 +1,8 @@
+.tippy-box {
+  font-family: 'Inter', sans-serif;
+  @include regular14;
+}
+
+[data-tippy-root] {
+  max-width: 200px !important;
+}

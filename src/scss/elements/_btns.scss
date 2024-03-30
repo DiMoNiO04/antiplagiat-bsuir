@@ -1,15 +1,22 @@
 .btn {
   border-radius: 8px;
-  @include bold18;
-  transition: background-color 0.3s ease;
+  @include transition(background-color);
   @include flexCenter;
+  column-gap: 5px;
+
+  img {
+    @include sizes(24px, 24px);
+  }
 }
 
 .btn-def {
   color: $white;
-  background-color: $blue200;
+  background-color: $blue400;
+  @include sizes(260px, 40px);
+  padding: 8px 0;
+  @include bold18;
 
   @include hover {
-    background-color: $blue250;
+    background-color: $blue300;
   }
 }

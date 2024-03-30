@@ -5,52 +5,75 @@
     .input__error {
       transform: translateY(0);
       @include visible;
+      z-index: 0;
+    }
+
+    .input__input {
+      border-color: $red200;
+    }
+
+    .input__btn-notify {
+      @include visible;
+    }
+
+    .input__btn {
+      @include hidden;
     }
   }
 
   &__label {
     @include semibold18;
-    color: $blue200;
+    color: $blue400;
     margin-bottom: 5px;
     display: inline-block;
   }
 
   &__error {
     @include light300;
-    color: $red100;
+    color: $red200;
     transform: translateY(-100%);
     position: absolute;
     padding-left: 25px;
     @include hidden;
+    z-index: -2;
     transition:
+      z-index 0.2s ease,
       opacity 0.2s ease,
       visibility 0.2s ease,
       transform 0.2s ease;
   }
 
   &__input {
-    width: 100%;
-    background-color: $blue100;
+    background-color: $blue50;
     border-radius: 10px;
     padding: 16px 20px 16px 25px;
     @include flexCenterBetween;
     cursor: pointer;
     border: 1px solid transparent;
     @include transition(border-color);
-    color: $blue300;
-    @include medium18;
+    color: $blue400;
+    @include regular18;
     width: 100%;
 
     &::placeholder {
-      color: $gray100;
+      color: $grey200;
     }
 
     &:focus {
-      border-color: $blue200;
+      border-color: $blue400;
+    }
+
+    &:focus ~ .input__btn svg {
+      fill: $blue400;
     }
   }
 
-  &__btn {
+  &__btn-error {
+    @include hidden;
+  }
+
+  &__btn,
+  &__btn-notify {
     @include sizes(25px, 25px);
     position: absolute;
     right: 25px;
@@ -59,6 +82,21 @@
       opacity 0.2s ease,
       visibility 0.2s ease;
 
+    svg {
+      stroke: none;
+      @include transition(fill);
+      stroke-width: 1.5;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &__btn-notify {
+    fill: $red200;
+    @include hidden;
+  }
+
+  &__btn {
     svg {
       &:first-child {
         @include visible();
@@ -81,15 +119,10 @@
     }
 
     svg {
-      stroke: $gray100;
-      fill: none;
-      @include transition(opacity);
-      stroke-width: 1.5;
-      position: absolute;
-      top: 0;
+      fill: $grey200;
 
       @include hover {
-        opacity: 0.7;
+        fill: $blue400;
       }
     }
   }

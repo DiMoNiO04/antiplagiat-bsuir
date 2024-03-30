@@ -1,0 +1,45 @@
+.search {
+  position: relative;
+  width: 544px;
+
+  &__input {
+    background-color: $blue200;
+    border-radius: 10px;
+    padding: 8.5px 45px;
+    @include flexCenterBetween;
+    cursor: pointer;
+    border: 1px solid transparent;
+    @include transition(border-color);
+    color: $blue300;
+    @include semibold18;
+    width: 100%;
+
+    &::placeholder {
+      color: $grey200;
+    }
+
+    &:focus {
+      border-color: $blue200;
+    }
+  }
+
+  &__btn {
+    @include sizes(16px, 16px);
+    position: absolute;
+    top: 12.5px;
+    left: 25px;
+
+    @include hover {
+      svg {
+        stroke: $blue300;
+      }
+    }
+
+    svg {
+      stroke-width: 1.5;
+      stroke: $grey200;
+      fill: none;
+      @include transition(stroke);
+    }
+  }
+}

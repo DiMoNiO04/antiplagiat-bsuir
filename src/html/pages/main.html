@@ -2,11 +2,16 @@
   <section class="auth">
     <div class="container">
       <div class="auth__container">
-        <h1 class="auth__title">Личный кабинет</h1>
+        <h1 class="auth__title title">Личный кабинет</h1>
         <form class="auth__form" id="auth-form">
-          <div class="auth__form-input input">
+          <div class="auth__form-input input --error">
             <label class="input__label" for="login">Логин</label>
             <input autocomplete="off" class="input__input" type="text" placeholder="Введите логин" name="login" />
+            <div class="input__btn-notify js-notify" data-notify="Менее 8 символов">
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#input-error"></use>
+              </svg>
+            </div>
             <div class="input__error">Некорректный формат логина!</div>
           </div>
           <div class="auth__form-input input input--pass">
@@ -22,10 +27,15 @@
               <svg>
                 <use xlink:href="assets/img/sprite.svg#pass-open"></use>
               </svg>
-              <svg style="background-color: red">
-                <use xlink:href="assets/img/sprite.svg#pass-open"></use>
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#pass-close"></use>
               </svg>
             </button>
+            <div class="input__btn-notify js-notify" data-notify="Менее 8 символов">
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#input-error"></use>
+              </svg>
+            </div>
             <div class="input__error">Некорректный формат пароля!</div>
           </div>
           <button class="auth__form-btn btn btn-def" form="auth-form" type="submit">Войти</button>
@@ -33,7 +43,7 @@
         <div class="auth__content">
           <div class="auth__content-block">
             <h2 class="auth__content-title">Вы в первый раз на нашем сайте?</h2>
-            <p>Учетные данные для авторизации аналогичны тем, которые используются для доступа к <b>ИИС БГУИР</b>.</p>
+            <p>Учетные данные для авторизации аналогичны тем, которые используются для доступа к ИИС БГУИР.</p>
             <p>
               Логин для студентов – номер студенческого билета, для преподавателей – имя почтового ящика БГУИР без
               @bsuir.by.

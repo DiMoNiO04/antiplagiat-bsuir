@@ -1,0 +1,23 @@
+.cab {
+  &__block {
+    background-color: $blue50;
+    border-radius: 8px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &:first-child {
+      @include flexCenterBetween;
+      padding: 25px 30px;
+    }
+  }
+
+  &__title {
+    color: $blue300;
+  }
+
+  &__search {
+    padding: 20px;
+  }
+}
