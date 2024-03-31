@@ -28,6 +28,12 @@
   line-height: 30px;
 }
 
+@mixin semibold20 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
 @mixin semibold18 {
   font-size: 18px;
   font-weight: 600;
@@ -37,7 +43,7 @@
 @mixin semibold14 {
   font-size: 14px;
   font-weight: 600;
-  line-height: 16.94px;
+  line-height: 18px;
 }
 
 @mixin medium26 {
@@ -46,10 +52,22 @@
   line-height: 30px;
 }
 
+@mixin medium16 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
 @mixin medium14 {
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
+}
+
+@mixin regular26 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 @mixin regular24 {

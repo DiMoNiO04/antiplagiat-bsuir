@@ -22,7 +22,7 @@
   }
 
   &__label {
-    @include semibold18;
+    @include semibold14;
     color: $blue400;
     margin-bottom: 5px;
     display: inline-block;
@@ -43,20 +43,32 @@
       transform 0.2s ease;
   }
 
+  // &:not(.--error) {
+  //   .input__input {
+  //     &:focus {
+  //       outline: 1px solid $blue400;
+  //     }
+  //   }
+  // }
+
   &__input {
-    background-color: $blue50;
+    background-color: $blue200;
     border-radius: 10px;
-    padding: 16px 20px 16px 25px;
+    padding: 14px 20px 14px 14px;
     @include flexCenterBetween;
     cursor: pointer;
     border: 1px solid transparent;
-    @include transition(border-color);
+    @include transition(border);
     color: $blue400;
-    @include regular18;
+    @include regular14;
     width: 100%;
 
     &::placeholder {
-      color: $grey200;
+      color: $grey300;
+    }
+
+    &:hover {
+      border-color: $grey300;
     }
 
     &:focus {
@@ -76,8 +88,8 @@
   &__btn-notify {
     @include sizes(25px, 25px);
     position: absolute;
-    right: 25px;
-    bottom: 16px;
+    right: 20px;
+    bottom: calc(50% - 25px);
     transition:
       opacity 0.2s ease,
       visibility 0.2s ease;
@@ -99,27 +111,27 @@
   &__btn {
     svg {
       &:first-child {
-        @include visible();
+        @include hidden();
       }
 
       &:last-child {
-        @include hidden();
+        @include visible();
       }
     }
     &.--open {
       svg {
         &:last-child {
-          @include visible();
+          @include hidden();
         }
 
         &:first-child {
-          @include hidden();
+          @include visible();
         }
       }
     }
 
     svg {
-      fill: $grey200;
+      fill: $grey300;
 
       @include hover {
         fill: $blue400;

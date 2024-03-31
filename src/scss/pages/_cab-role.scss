@@ -1,17 +1,18 @@
 .cab-role {
   &__content {
-    padding: 0 25px 10px;
+    padding-bottom: 16px;
   }
 
   &__block {
-    padding: 16px 0;
-    border-bottom: 1px solid $blue400;
+    padding: 23px 25px;
+    border-bottom: 1px solid $blue200;
     display: grid;
-    grid-template-columns: 7.5% 35.5% 57%;
+    grid-template-columns: 10% 42% 48%;
     column-gap: 20px;
 
     div {
-      @include regular16;
+      @include regular14;
+      @include croppingText(1);
     }
   }
 }

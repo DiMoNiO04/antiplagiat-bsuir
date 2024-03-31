@@ -24,7 +24,7 @@ body {
   color: $blue400;
   margin: 0;
   padding: 0;
-  background: $blue50;
+  background: $blue200;
   overflow-x: hidden;
   @include flexColumn;
   min-height: 100vh;
@@ -156,7 +156,7 @@ fieldset {
 }
 
 .container {
-  max-width: 1350px;
+  max-width: 1780px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -166,7 +166,7 @@ fieldset {
 }
 
 main {
-  margin: 50px 0 25px;
+  margin: 40px 0;
   flex: 1;
 }
 

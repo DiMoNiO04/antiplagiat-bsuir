@@ -2,12 +2,12 @@
   &__content {
     @include flexColumn;
     row-gap: 25px;
-    padding: 55px 80px 55px 55px;
+    padding: 50px;
   }
 
   &__icon {
     @include sizes(200px, 200px);
-    background-color: $blue50;
+    background-color: $blue200;
     border-radius: 50%;
     @include flexCenter;
 
@@ -30,18 +30,23 @@
 
   &__info {
     margin-left: 250px;
-    background-color: $blue50;
+    background-color: $blue200;
     border-radius: 8px;
+    max-width: 935px;
+    width: 100%;
   }
 
   &__info-block {
     @include mb(20);
-    padding: 25px;
+    padding: 20px;
     display: flex;
     align-items: center;
     column-gap: 30px;
 
-    b,
+    b {
+      @include medium16;
+    }
+
     a,
     p {
       @include regular16;

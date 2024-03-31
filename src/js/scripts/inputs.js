@@ -32,7 +32,30 @@ const changeInputWithError = () => {
   }
 };
 
+const changeVisibleResetSearch = () => {
+  const search = document.querySelector('.search');
+
+  if (search) {
+    const btnRes = search.querySelector('.search__btn-reset');
+    const input = search.querySelector('input');
+
+    input.addEventListener('input', () => {
+      if (input.value) {
+        btnRes.classList.add('--active');
+      } else {
+        btnRes.classList.remove('--active');
+      }
+    });
+
+    btnRes.addEventListener('click', () => {
+      btnRes.classList.remove('--active');
+      input.focus();
+    });
+  }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   changeVisiblePassword();
   changeInputWithError();
+  changeVisibleResetSearch();
 });

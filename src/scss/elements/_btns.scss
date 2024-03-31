@@ -14,7 +14,7 @@
   background-color: $blue400;
   @include sizes(260px, 40px);
   padding: 8px 0;
-  @include regular18;
+  @include regular16;
 
   svg {
     @include sizes(25px, 25px);

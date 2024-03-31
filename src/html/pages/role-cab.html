@@ -2,63 +2,123 @@
   <section class="cab cab--role">
     <div class="container">
       <div class="cab__container">
-        <div class="cab__block">
-          <h1 class="cab__title title">Роль пользователя</h1>
+        <div class="cab__titles">
+          <h1 class="cab__titles-title title">Роль пользователя</h1>
+          <div class="cab__titles-left">
+            <div class="cab__search">
+              <form action="" id="search" class="cab__search-form search">
+                <input autocomplete="off" type="text" class="search__input" placeholder="Поиск по ФИО" />
+                <button type="submit" form="search" class="search__btn-submit">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+                <button type="reset" form="search" class="search__btn-reset">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#reset"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
         <div class="cab__block">
-          <div class="cab__search">
-            <form action="" id="search" class="cab__search-form search">
-              <input autocomplete="off" type="text" class="search__input" placeholder="Поиск по ФИО" />
-              <button type="submit" form="search" class="search__btn">
+          <div class="cab__header">
+            <div class="cab__header-item">
+              <div class="cab__header-name">№</div>
+              <button type="button" class="cab__header-btn">
                 <svg>
-                  <use xlink:href="assets/img/sprite.svg#search"></use>
+                  <use xlink:href="assets/img/sprite.svg#table-btn"></use>
                 </svg>
               </button>
-            </form>
-          </div>
-          <div class="cab__header">
-            <div>№</div>
-            <div>ФИО</div>
-            <div>Роль</div>
+            </div>
+            <div class="cab__header-item">
+              <div class="cab__header-name">ФИО</div>
+              <button type="button" class="cab__header-btn">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#table-btn"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="cab__header-item">
+              <div class="cab__header-name">Роль</div>
+            </div>
           </div>
           <div class="cab__content cab-role">
             <div class="cab-role__content">
               <div class="cab-role__block">
                 <div>1</div>
                 <div>Ташлыкова-Бушкевич Полина Александровна</div>
-                <div>студент, администратор, преподаватель</div>
+                <div>пользователь, администратор</div>
               </div>
               <div class="cab-role__block">
                 <div>2</div>
                 <div>Ташлыкова-Бушкевич Полина Александровна</div>
-                <div>студент, администратор, преподаватель</div>
+                <div>пользователь, администратор</div>
+              </div>
+              <div class="cab-role__block">
+                <div>3</div>
+                <div>Ташлыкова-Бушкевич Полина Александровна</div>
+                <div>пользователь, администратор</div>
+              </div>
+              <div class="cab-role__block">
+                <div>4</div>
+                <div>Ташлыкова-Бушкевич Полина Александровна</div>
+                <div>пользователь, администратор</div>
+              </div>
+              <div class="cab-role__block">
+                <div>5</div>
+                <div>Ташлыкова-Бушкевич Полина Александровна</div>
+                <div>пользователь, администратор</div>
+              </div>
+              <div class="cab-role__block">
+                <div>6</div>
+                <div>Ташлыкова-Бушкевич Полина Александровна</div>
+                <div>пользователь, администратор</div>
+              </div>
+              <div class="cab-role__block">
+                <div>7</div>
+                <div>Ташлыкова-Бушкевич Полина Александровна</div>
+                <div>пользователь, администратор</div>
+              </div>
+              <div class="cab-role__block">
+                <div>8</div>
+                <div>Ташлыкова-Бушкевич Полина Александровна</div>
+                <div>пользователь, администратор</div>
+              </div>
+              <div class="cab-role__block">
+                <div>9</div>
+                <div>Ташлыкова-Бушкевич Полина Александровна</div>
+                <div>пользователь, администратор</div>
+              </div>
+              <div class="cab-role__block">
+                <div>10</div>
+                <div>Ташлыкова-Бушкевич Полина Александровна</div>
+                <div>пользователь, администратор</div>
               </div>
             </div>
           </div>
           <div class="cab__desc">
             <div class="cab__desc-content">
-              <div class="cab__desc-pagination pagination">
-                <button type="button" class="pagination__btn">
-                  <svg>
-                    <use xlink:href="assets/img/sprite.svg#pagination-left"></use>
-                  </svg>
-                </button>
-                <div class="pagination__numbers">
-                  <span>1</span>
-                  <span>/</span>
-                  <span>1</span>
+              <div class="cab__desc-infos">
+                <div class="cab__desc-counts">Строков на странице: 10</div>
+                <div class="cab__desc-pagination pagination">
+                  <button type="button" class="pagination__btn">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#pagination-left"></use>
+                    </svg>
+                  </button>
+                  <div class="pagination__info">1-10 из 276</div>
+                  <button type="button" class="pagination__btn">
+                    <svg>
+                      <use xlink:href="assets/img/sprite.svg#pagination-right"></use>
+                    </svg>
+                  </button>
                 </div>
-                <button type="button" class="pagination__btn">
-                  <svg>
-                    <use xlink:href="assets/img/sprite.svg#pagination-right"></use>
-                  </svg>
-                </button>
               </div>
-              <div class="cab__desc-count">100 Пользователей</div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 </main>

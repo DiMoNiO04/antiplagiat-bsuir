@@ -3,24 +3,24 @@
 
   &--cab {
     .cab__header {
-      grid-template-columns: 41% 15% 7% 37%;
+      grid-template-columns: 42% 13% 15% 28%;
     }
   }
 
   &--role {
     .cab__header {
-      grid-template-columns: 7.5% 35.5% 57%;
-    }
-
-    .cab__desc-content {
-      width: 53%;
-      margin: 0 0 0 auto;
+      grid-template-columns: 10% 42% 48%;
     }
   }
 
+  &__titles {
+    @include flexCenterBetween;
+    margin-bottom: 20px;
+  }
+
   &__block {
-    background-color: $blue200;
-    border-radius: 8px;
+    background-color: $white;
+    border-radius: 12px;
 
     &:not(:last-child) {
       margin-bottom: 25px;
@@ -36,56 +36,79 @@
         display: flex;
       }
 
-      .cab__desc-notify {
-        @include hidden;
+      .cab__content {
+        @include flexCenter;
       }
 
-      .cab__desc-content {
-        justify-content: flex-end;
+      .cab__desc-infos {
+        display: none;
       }
     }
-  }
-
-  &__search {
-    padding: 20px 25px;
   }
 
   &__header {
-    background-color: $blue50;
-    border-top: 1px solid $blue400;
+    background-color: $white;
     border-bottom: 1px solid $blue400;
-    padding: 10px 25px;
+    padding: 18px 25px;
     display: grid;
     column-gap: 20px;
+    border-radius: 12px 12px 0 0;
+  }
 
-    div {
-      @include bold16;
+  &__header-item {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+  }
+
+  &__header-name {
+    @include medium16;
+  }
+
+  &__header-btn {
+    @include sizes(20px, 20px);
+
+    svg {
+      stroke: none;
+      fill: $blue400;
+      @include transition(fill);
+    }
+
+    @include hover {
+      svg {
+        fill: $blue300;
+      }
     }
   }
 
+  &__titles-left {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+
   &__content {
-    min-height: 594px;
+    min-height: 676px;
+    height: 100%;
     border-bottom: 1px solid $blue400;
   }
 
   &__content-none {
-    @include flexCenter;
-    @include fullSize;
-    display: none;
-  }
-
-  &__content-none-msg {
-    background-color: $blue50;
+    background-color: $blue200;
     margin: auto;
     padding: 46px 112px;
     border-radius: 10px;
-    color: $grey200;
-    @include medium26;
+    color: $blue300;
+    @include regular26;
+    @include flexCenter;
+    @include sizes(fit-content, 100%);
+    display: none;
   }
 
   &__desc {
-    background-color: $blue50;
-    padding: 8px 0;
+    background-color: $white;
+    padding: 16px 25px;
+    border-radius: 0 0 12px 12px;
   }
 
   &__desc-content {
@@ -93,19 +116,22 @@
     column-gap: 20px;
   }
 
-  &__desc-count {
-    @include bold16;
-    flex-shrink: 0;
+  &__desc-infos {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    margin: 0 0 0 auto;
+  }
+
+  &__desc-counts {
+    @include regular16;
+    color: $grey300;
   }
 
   &__desc-notify {
     display: flex;
     column-gap: 10px;
     align-items: center;
-    @include visible;
-    transition:
-      opacity 0.2s ease,
-      transition 0.2s ease;
 
     svg {
       @include sizes(24px, 24px);

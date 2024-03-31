@@ -1,27 +1,26 @@
 .pagination {
   display: flex;
   align-items: center;
-  column-gap: 5px;
+  column-gap: 10px;
 
   &__btn {
     @include sizes(24px, 24px);
 
     @include hover {
       svg {
-        stroke: $blue300;
+        stroke: $blue400;
       }
     }
 
     svg {
       fill: none;
-      stroke: $blue400;
+      stroke: $grey300;
       @include transition(stroke);
     }
   }
 
-  &__numbers {
-    span {
-      @include medium14;
-    }
+  &__info {
+    @include regular16;
+    color: $grey300;
   }
 }

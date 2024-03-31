@@ -5,7 +5,7 @@
   &__input {
     background-color: $blue50;
     border-radius: 10px;
-    padding: 10px 35px;
+    padding: 10px 42px;
     @include flexCenterBetween;
     cursor: pointer;
     border: 1px solid transparent;
@@ -27,11 +27,31 @@
     }
   }
 
-  &__btn {
-    @include sizes(16px, 16px);
-    position: absolute;
-    top: calc(50% - 8px);
+  &__btn-submit {
     left: 15px;
+  }
+
+  &__btn-reset {
+    right: 15px;
+    @include hidden;
+    transition:
+      opacity 0.2s ease,
+      visibility 0.2s ease;
+
+    &.--active {
+      @include visible;
+    }
+
+    svg {
+      stroke-width: 2;
+    }
+  }
+
+  &__btn-reset,
+  &__btn-submit {
+    @include sizes(24px, 24px);
+    position: absolute;
+    top: calc(50% - 12px);
 
     @include hover {
       svg {

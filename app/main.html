@@ -1,1 +1,89 @@
-<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="theme-color" content="#111111"><title>Вход</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/vendor.css"><link rel="stylesheet" href="css/main.css"></head><body><header class="header"><div class="container"><div class="header__container"><div class="header__logo logo"><img src="./assets/img/logo.svg" alt="БГУИР"></div></div></div></header><main><section class="auth"><div class="container"><div class="auth__container"><h1 class="auth__title title">Личный кабинет</h1><form class="auth__form" id="auth-form"><div class="auth__form-input input --error"><label class="input__label" for="login">Логин</label> <input autocomplete="off" class="input__input" type="text" placeholder="Введите логин" name="login"><div class="input__btn-notify js-notify" data-notify="Менее 8 символов"><svg><use xlink:href="assets/img/sprite.svg#input-error"></use></svg></div><div class="input__error">Некорректный формат логина!</div></div><div class="auth__form-input input input--pass"><label class="input__label" for="login">Пароль</label> <input autocomplete="off" class="input__input" type="password" placeholder="Введите пароль" name="password"> <button type="button" class="input__btn"><svg><use xlink:href="assets/img/sprite.svg#pass-open"></use></svg> <svg><use xlink:href="assets/img/sprite.svg#pass-close"></use></svg></button><div class="input__btn-notify js-notify" data-notify="Менее 8 символов"><svg><use xlink:href="assets/img/sprite.svg#input-error"></use></svg></div><div class="input__error">Некорректный формат пароля!</div></div><button class="auth__form-btn btn btn-def" form="auth-form" type="submit">Войти</button></form><div class="auth__content"><div class="auth__content-block"><h2 class="auth__content-title">Вы в первый раз на нашем сайте?</h2><p>Учетные данные для авторизации аналогичны тем, которые используются для доступа к ИИС БГУИР.</p><p>Логин для студентов — номер студенческого билета, для преподавателей — имя почтового ящика БГУИР без @bsuir.by.</p></div><div class="auth__content-block"><h2 class="auth__content-title">Что делать, если логин/пароль не работает?</h2><p>В случае возникновения проблем со входом студентам необходимо восстановить пароль в ИИС, преподавателям — в <a href="https://account.bsuir.by/password-recovery">Кабинете сотрудника БГУИР</a></p><p>Если самостоятельно сбросить пароль не удалось, воспользуйтесь пунктом «<a href="https://courses.bsuir.by/customforms/form1.html">Восстановление пароля</a>» в <a href="https://courses.bsuir.by/customforms/form1.html">форме связи с техподдержкой.</a></p></div></div></div></div></section></main><footer class="footer"></footer><script src="https://unpkg.com/@popperjs/core@2"></script><script src="https://unpkg.com/tippy.js@6"></script><script src="./js/main.js"></script></body></html>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#111111" />
+    <title>Вход</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <div class="header__logo logo"><img src="./assets/img/logo.svg" alt="БГУИР" /></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="auth">
+        <div class="container">
+          <div class="auth__container">
+            <h1 class="auth__title title">Личный кабинет</h1>
+            <form class="auth__form" id="auth-form">
+              <div class="auth__form-input input --error">
+                <label class="input__label" for="login">Логин</label>
+                <input autocomplete="off" class="input__input" type="text" placeholder="Введите логин" name="login" />
+                <div class="input__btn-notify js-notify" data-notify="Менее 8 символов">
+                  <svg><use xlink:href="assets/img/sprite.svg#input-error"></use></svg>
+                </div>
+                <div class="input__error">Некорректный формат логина!</div>
+              </div>
+              <div class="auth__form-input input input--pass">
+                <label class="input__label" for="login">Пароль</label>
+                <input
+                  autocomplete="off"
+                  class="input__input"
+                  type="password"
+                  placeholder="Введите пароль"
+                  name="password"
+                />
+                <button type="button" class="input__btn">
+                  <svg><use xlink:href="assets/img/sprite.svg#pass-open"></use></svg>
+                  <svg><use xlink:href="assets/img/sprite.svg#pass-close"></use></svg>
+                </button>
+                <div class="input__btn-notify js-notify" data-notify="Менее 8 символов">
+                  <svg><use xlink:href="assets/img/sprite.svg#input-error"></use></svg>
+                </div>
+                <div class="input__error">Некорректный формат пароля!</div>
+              </div>
+              <button class="auth__form-btn btn btn-def" form="auth-form" type="submit">Войти</button>
+            </form>
+            <div class="auth__content">
+              <div class="auth__content-block">
+                <h2 class="auth__content-title">Вы в первый раз на нашем сайте?</h2>
+                <p>Учетные данные для авторизации аналогичны тем, которые используются для доступа к ИИС БГУИР.</p>
+                <p>
+                  Логин для студентов — номер студенческого билета, для преподавателей — имя почтового ящика БГУИР без
+                  @bsuir.by.
+                </p>
+              </div>
+              <div class="auth__content-block">
+                <h2 class="auth__content-title">Что делать, если логин/пароль<br />не работает?</h2>
+                <p>
+                  В случае возникновения проблем со входом студентам необходимо восстановить пароль в ИИС,
+                  преподавателям — в <a href="https://account.bsuir.by/password-recovery">Кабинете сотрудника БГУИР</a>
+                </p>
+                <p>
+                  Если самостоятельно сбросить пароль не удалось, воспользуйтесь пунктом «<a
+                    href="https://courses.bsuir.by/customforms/form1.html"
+                    >Восстановление пароля</a
+                  >» в <a href="https://courses.bsuir.by/customforms/form1.html">форме связи с техподдержкой.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
