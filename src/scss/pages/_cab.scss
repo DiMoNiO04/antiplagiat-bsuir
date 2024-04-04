@@ -13,6 +13,12 @@
     }
   }
 
+  &--results {
+    .cab__header {
+      grid-template-columns: 10% 30% 13.5% 15.5% 26%;
+    }
+  }
+
   &__titles {
     @include flexCenterBetween;
     margin-bottom: 20px;

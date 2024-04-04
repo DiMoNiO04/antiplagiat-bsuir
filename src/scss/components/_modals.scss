@@ -1,0 +1,98 @@
+.graph-modal {
+  background: #00000080;
+  @include flexCenter;
+
+  &::before {
+    display: none;
+  }
+
+  &__close {
+    background: none;
+    top: 20px;
+    right: 20px;
+    @include sizes(24px, 24px);
+
+    svg {
+      @include fullSize;
+      stroke: $grey300;
+      stroke-width: 2;
+      @include transition(stroke);
+    }
+
+    @include hover {
+      svg {
+        stroke: $blue400;
+      }
+    }
+  }
+
+  &__container {
+    border-radius: 8px;
+    background-color: $blue200;
+  }
+
+  .h2 {
+    margin: 0;
+  }
+}
+
+.modal-doc {
+  width: 1320px;
+  margin-right: 16px;
+  margin-left: 16px;
+
+  &__title {
+    @include bold36;
+  }
+
+  &__subtitle {
+    @include regular18;
+    color: $red200;
+    margin-bottom: 15px;
+  }
+
+  &__items {
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    max-width: 984px;
+    display: grid;
+    grid-template-columns: 135px 1fr;
+    column-gap: 30px;
+    @include mb(5px);
+
+    div {
+      &:first-child {
+        @include bold16;
+      }
+      &:last-child {
+        @include regular14;
+      }
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 10px;
+  }
+
+  &__btn {
+    @include flexCenter;
+    column-gap: 5px;
+    border-radius: 8px;
+    width: fit-content;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-width: 260px;
+
+    svg {
+      @include sizes(24px, 24px);
+    }
+  }
+}
