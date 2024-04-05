@@ -96,3 +96,32 @@
     }
   }
 }
+
+.modal-load {
+  width: 604px;
+
+  &__title {
+    @include bold36;
+    margin-bottom: 20px;
+  }
+
+  &__drag-area {
+    margin-bottom: 20px;
+  }
+
+  &__dropdown {
+    margin-bottom: 36px;
+  }
+
+  &__input {
+    margin-bottom: 26px;
+  }
+
+  &__input input {
+    background-color: $white;
+  }
+
+  &__btn {
+    margin: 0 0 0 auto;
+  }
+}

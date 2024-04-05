@@ -1,0 +1,41 @@
+.drag-area {
+  border-radius: 8px;
+  border: 1.5px dashed $grey300;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 45px;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+
+  &.--active {
+    border-color: $blue400;
+    background: $blue50;
+  }
+
+  &.--error {
+    border-color: $red200;
+    .drag-area__sm {
+      color: $red200;
+    }
+  }
+
+  &__btn {
+    margin-bottom: 5px;
+  }
+
+  &__up {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__sm,
+  &__up {
+    @include regular16;
+    color: $grey300;
+    text-align: center;
+  }
+}

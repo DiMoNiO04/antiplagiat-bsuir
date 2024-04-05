@@ -5,6 +5,8 @@ import './scripts/tippys';
 import './scripts/inputs';
 import './scripts/header';
 import './scripts/result';
+import './scripts/dropdown';
+import './scripts/drag-area';
 // import './scripts/modals';
 
 // eslint-disable-next-line no-unused-vars

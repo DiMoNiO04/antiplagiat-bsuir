@@ -26,6 +26,10 @@
     color: $blue400;
     margin-bottom: 5px;
     display: inline-block;
+
+    span {
+      color: $red200;
+    }
   }
 
   &__error {
