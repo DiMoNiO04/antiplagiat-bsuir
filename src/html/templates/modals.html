@@ -119,4 +119,35 @@
       </form>
     </div>
   </div>
+  <div class="graph-modal__container modal-doc" role="dialog" aria-modal="true" data-graph-target="modal-protection">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
+      <svg>
+        <use xlink:href="assets/img/sprite.svg#modal-close"></use>
+      </svg>
+    </button>
+    <div class="modal-doc__container">
+      <h2 class="modal-doc__title">Отправить документ на защиту</h2>
+      <p class="modal-doc__subtitle">Вы уверены, что готовы отправить документ на защиту необратима?</p>
+      <div class="modal-doc__items">
+        <div class="modal-doc__item">
+          <div>Оригинальность</div>
+          <div class="js-modal-doc-orig">100%</div>
+        </div>
+        <div class="modal-doc__item">
+          <div>Название</div>
+          <div class="js-modal-doc-file">
+            Отличительным аспектом статьи является её готовность. Если подготавливаемый материал так и не был
+            опубликован (не вышел в тираж, не получил распространения), то такой труд относить к статье некорректно.
+            Скорее всего данную работу можно назвать черновиком или заготовкой. Поэтому целью любой статьи является
+            распространение содержащейся в ней информации
+          </div>
+        </div>
+      </div>
+      <div class="modal-doc__btns">
+        <button type="button" class="modal-doc__btn btn-def js-modal-close">
+          <span>Отправить</span>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
