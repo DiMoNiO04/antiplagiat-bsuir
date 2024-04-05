@@ -1,10 +1,10 @@
-const mores = document.querySelectorAll('.cab-results__more');
+const mores = document.querySelectorAll('.more-btns');
 
 function handleMore() {
   if (mores) {
     mores.forEach((more) => {
-      const moreBtn = more.querySelector('.cab-results__more-btn');
-      const moreContent = more.querySelector('.cab-results__more-content');
+      const moreBtn = more.querySelector('.more-btns__btn');
+      const moreContent = more.querySelector('.more-btns__content');
 
       moreBtn.addEventListener('click', () => {
         moreContent.classList.toggle('--active');
@@ -16,7 +16,7 @@ function handleMore() {
 document.addEventListener('click', (event) => {
   if (mores) {
     mores.forEach((more) => {
-      const moreContent = more.querySelector('.cab-results__more-content');
+      const moreContent = more.querySelector('.more-btns__content');
       const isClickInsideMore = more.contains(event.target);
 
       if (!isClickInsideMore) {
