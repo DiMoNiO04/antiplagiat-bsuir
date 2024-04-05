@@ -102,18 +102,21 @@
           </div>
         </div>
         <div class="modal-load__drag-area drag-area">
-          <button class="drag-area__btn btn btn-def" type="button">
-            <svg>
-              <use xlink:href="assets/img/sprite.svg#paper"></use>
-            </svg>
-            Загрузить документ
-          </button>
-          <p class="drag-area__up">ИЛИ ПЕРЕТАЩИТЕ ФАЙЛЫ СЮДА</p>
-          <p class="drag-area__sm">
-            Допустимый формат документа: *pdf <br />
-            Максимальный размер: 10 МБ
-          </p>
-          <input type="file" hidden name="#" accept="application/pdf" />
+          <div class="drag-area__form">
+            <button class="drag-area__btn btn btn-def" type="button">
+              <svg>
+                <use xlink:href="assets/img/sprite.svg#paper"></use>
+              </svg>
+              Загрузить документ
+            </button>
+            <p class="drag-area__up">ИЛИ ПЕРЕТАЩИТЕ ФАЙЛЫ СЮДА</p>
+            <p class="drag-area__sm">
+              Допустимый формат документа: *pdf <br />
+              Максимальный размер: 10 МБ
+            </p>
+            <input type="file" hidden name="file" accept="application/pdf" />
+          </div>
+          <div class="drag-area__files"></div>
         </div>
         <button class="modal-load__btn btn btn-def" type="submit" form="modal-doc-form">Проверить</button>
       </form>
