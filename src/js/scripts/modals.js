@@ -31,9 +31,9 @@ function addInfoInModalDoc() {
       const itemOrig = currentItem.querySelector('.js-modal-doc-orig').textContent;
       const itemFile = currentItem.querySelector('.js-modal-doc-file').textContent;
 
-      modalName.textContent = itemName;
-      modalOrig.textContent = itemOrig;
-      modalFilename.textContent = itemFile;
+      modalName.textContent = itemName || '—';
+      modalOrig.textContent = itemOrig || '—';
+      modalFilename.textContent = itemFile || '—';
     });
   });
 }
@@ -61,8 +61,8 @@ function addInfoInModalDocLoad() {
       const itemOrig = currentItem.querySelector('.js-modal-doc-orig').textContent;
       const itemFile = currentItem.querySelector('.js-modal-doc-file').textContent;
 
-      modalOrig.textContent = itemOrig;
-      modalFilename.textContent = itemFile;
+      modalOrig.textContent = itemOrig || '—';
+      modalFilename.textContent = itemFile || '—';
     });
   });
 }

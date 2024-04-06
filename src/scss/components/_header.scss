@@ -20,6 +20,11 @@
     &.--active {
       .header__btn-arrow {
         transform: rotate(180deg);
+
+        svg {
+          background-color: $white;
+          fill: $blue400;
+        }
       }
     }
   }
@@ -44,10 +49,13 @@
   }
 
   &__btn-arrow svg {
-    fill: $blue400;
+    fill: $white;
     stroke: none;
-    background-color: $blue50;
+    background: none;
     border-radius: 50%;
+    transition:
+      fill 0.2s ease,
+      background 0.2s ease;
   }
 
   &__menu {

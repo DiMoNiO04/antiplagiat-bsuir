@@ -15,7 +15,9 @@
     svg {
       fill: none;
       stroke: $grey300;
-      @include transition(stroke);
+      transition:
+        fill 0.2s ease,
+        stroke 0.2s ease;
     }
   }
 
