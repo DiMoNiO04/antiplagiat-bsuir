@@ -9,10 +9,10 @@
       position: absolute;
       @include sizes(20px, 20px);
       fill: none;
+      @include hidden;
 
       &:first-child {
         stroke: $green200;
-        @include hidden;
       }
 
       &:last-child {
@@ -31,6 +31,22 @@
     div {
       &:nth-child(4) {
         margin: 0 auto;
+      }
+    }
+
+    &.--success .cab-results__result {
+      svg {
+        &:first-child {
+          @include visible;
+        }
+      }
+    }
+
+    &.--no-success .cab-results__result {
+      svg {
+        &:last-child {
+          @include visible;
+        }
       }
     }
 
