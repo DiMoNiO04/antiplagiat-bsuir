@@ -25,3 +25,13 @@
     background-color: $blue300;
   }
 }
+
+@media screen and (max-width: $mob) {
+  .btn {
+    border-radius: 4px;
+  }
+
+  .btn-def {
+    height: 32px;
+  }
+}

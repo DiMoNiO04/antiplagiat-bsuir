@@ -149,3 +149,23 @@
     }
   }
 }
+
+@media screen and (max-width: $mob) {
+  .input {
+    &__input {
+      padding: 5px 14px;
+      border-radius: 4px;
+    }
+
+    &__btn,
+    &__btn-notify {
+      right: 10px;
+      @include sizes(20px, 20px);
+      bottom: calc(50% - 22px);
+    }
+
+    &--pass .input__input {
+      padding-right: 36px;
+    }
+  }
+}

@@ -40,7 +40,7 @@
     }
 
     a {
-      @include regular16;
+      @include bold16;
       @include transition(color);
       @include hover {
         color: $blue400;
@@ -57,13 +57,14 @@
   &__form-btn {
     @include medium16;
     @include sizes(100%, 48px);
+    margin-top: 5px;
   }
 }
 
 @media screen and (max-width: $mob) {
   .auth {
     &__container {
-      padding: 24px 16px;
+      padding: 20px 12px;
       width: 100%;
     }
 
@@ -71,19 +72,26 @@
       padding: 24px 16px;
     }
 
+    &__form {
+      row-gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    &__form-btn {
+      height: 32px;
+      margin-top: 7px;
+    }
+
+    &__content {
+      padding: 12px;
+    }
+
     &__content-block {
-      p {
-        font-size: 16px;
-      }
+      @include mb(12px);
     }
 
     &__content-title {
-      font-size: 20px;
-      line-height: 24px;
-
-      br {
-        display: none;
-      }
+      text-wrap: balance;
     }
   }
 }

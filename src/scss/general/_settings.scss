@@ -162,7 +162,7 @@ fieldset {
 
 .container {
   max-width: 1780px;
-  padding: 0 15px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -175,6 +175,20 @@ main {
   flex: 1;
 }
 
+.auth-page {
+  margin: 68px 0;
+}
+
+@media screen and (max-width: $laptop) {
+  .container {
+    max-width: 1220px;
+  }
+
+  .auth-page {
+    margin: 40px 0;
+  }
+}
+
 @media screen and (max-width: $tablet) {
   .title {
     font-size: 32px;
@@ -183,6 +197,12 @@ main {
 
 @media screen and (max-width: $mob) {
   .title {
-    font-size: 28px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  main,
+  .auth-page {
+    margin: 20px 0;
   }
 }
