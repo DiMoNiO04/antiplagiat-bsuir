@@ -1,8 +1,10 @@
 .btn {
   border-radius: 8px;
-  @include transition(background-color);
   @include flexCenter;
   column-gap: 5px;
+  padding: 8px 0;
+  flex-shrink: 0;
+  @include regular16;
 
   img {
     @include sizes(24px, 24px);
@@ -12,10 +14,8 @@
 .btn-def {
   color: $white;
   background-color: $blue400;
+  transition: all 0.2s ease;
   @include sizes(260px, 40px);
-  padding: 8px 0;
-  flex-shrink: 0;
-  @include regular16;
 
   svg {
     @include sizes(25px, 25px);
@@ -27,12 +27,27 @@
   }
 }
 
+.btn-sec {
+  color: $blue400;
+  background-color: transparent;
+  @include sizes(280px, 40px);
+  border: 1px solid $blue400;
+  transition: all 0.2s ease;
+
+  @include hover {
+    background-color: $blue300;
+    border-color: $blue300;
+    color: $white;
+  }
+}
+
 @media screen and (max-width: $mob) {
   .btn {
     border-radius: 4px;
   }
 
-  .btn-def {
+  .btn-def,
+  .btn-sec {
     height: 32px;
 
     svg {

@@ -308,6 +308,14 @@
       }
     }
 
+    &--results {
+      .--no-docs {
+        .cab__desc {
+          display: none;
+        }
+      }
+    }
+
     &__content {
       min-height: 186px;
       border: none;
