@@ -67,3 +67,32 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet) {
+  .search {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: $mob) {
+  .search {
+    &__btn-reset,
+    &__btn-submit {
+      @include sizes(18px, 18px);
+      top: calc(50% - 9px);
+    }
+
+    &__btn-submit {
+      left: 10px;
+    }
+
+    &__btn-reset {
+      right: 10px;
+    }
+
+    &__input {
+      border-radius: 4px;
+      padding: 5px 32px;
+    }
+  }
+}

@@ -160,8 +160,8 @@
     &__btn,
     &__btn-notify {
       right: 10px;
-      @include sizes(20px, 20px);
-      bottom: calc(50% - 22px);
+      @include sizes(18px, 18px);
+      bottom: calc(50% - 20px);
     }
 
     &--pass .input__input {

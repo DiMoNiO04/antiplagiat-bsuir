@@ -14,6 +14,7 @@
   background-color: $blue400;
   @include sizes(260px, 40px);
   padding: 8px 0;
+  flex-shrink: 0;
   @include regular16;
 
   svg {
@@ -33,5 +34,9 @@
 
   .btn-def {
     height: 32px;
+
+    svg {
+      @include sizes(18px, 18px);
+    }
   }
 }

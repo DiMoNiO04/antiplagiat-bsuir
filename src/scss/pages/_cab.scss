@@ -25,7 +25,6 @@
   }
 
   &__block {
-    background-color: $white;
     border-radius: 12px;
 
     &:not(:last-child) {
@@ -101,6 +100,7 @@
   &__content {
     min-height: 676px;
     height: 100%;
+    background-color: $white;
     border-bottom: 1px solid $blue400;
   }
 
@@ -147,6 +147,7 @@
     svg {
       @include sizes(24px, 24px);
       fill: $red200;
+      flex-shrink: 0;
     }
 
     p {
@@ -230,6 +231,52 @@
     &__titles {
       margin-bottom: 15px;
     }
+
+    &__header {
+      padding: 15px 25px;
+    }
+
+    &__content {
+      min-height: 420px;
+    }
+
+    &__header-name {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &__content-none {
+      padding: 34px 91px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__desc {
+      padding: 9px 25px;
+    }
+
+    &__desc-notify p {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .cab {
+    &__titles {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 10px;
+    }
+
+    &__search {
+      width: 100%;
+    }
+
+    &__titles-left {
+      width: 100%;
+    }
   }
 }
 
@@ -239,8 +286,53 @@
       margin-bottom: 10px;
     }
 
+    &__titles-left {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+    }
+
     &__block {
       border-radius: 8px;
+    }
+
+    &__btn {
+      width: 100%;
+    }
+
+    &__block {
+      &.--no-docs {
+        .cab__header {
+          display: none;
+        }
+      }
+    }
+
+    &__content {
+      min-height: 186px;
+      border: none;
+      margin-bottom: 10px;
+    }
+
+    &__content-none {
+      padding: 34px 23px;
+    }
+
+    &__desc {
+      padding: 10px 12px;
+      border-radius: 4px;
+    }
+
+    &__desc-notify {
+      align-items: flex-start;
+      column-gap: 5px;
+      svg {
+        @include sizes(20px, 20px);
+      }
+      p {
+        font-size: 12px;
+        line-height: 18px;
+      }
     }
   }
 }
