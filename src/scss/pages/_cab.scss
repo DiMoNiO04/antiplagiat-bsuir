@@ -224,3 +224,23 @@
     @include regular14;
   }
 }
+
+@media screen and (max-width: $laptop) {
+  .cab {
+    &__titles {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: $mob) {
+  .cab {
+    &__titles {
+      margin-bottom: 10px;
+    }
+
+    &__block {
+      border-radius: 8px;
+    }
+  }
+}

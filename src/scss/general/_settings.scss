@@ -181,11 +181,15 @@ main {
 
 @media screen and (max-width: $laptop) {
   .container {
-    max-width: 1220px;
+    max-width: 1228px;
   }
 
   .auth-page {
     margin: 40px 0;
+  }
+
+  main {
+    margin: 15px 0;
   }
 }
 
