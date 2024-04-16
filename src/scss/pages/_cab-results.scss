@@ -56,3 +56,11 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet) {
+  .cab-results {
+    &__more {
+      display: none;
+    }
+  }
+}
