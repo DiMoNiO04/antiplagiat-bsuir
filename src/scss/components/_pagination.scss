@@ -8,8 +8,12 @@
     position: relative;
 
     @include hover {
-      svg {
+      svg path:first-child {
+        fill: $blue400;
         stroke: $blue400;
+      }
+      svg path:last-child {
+        stroke: $white;
       }
     }
 
@@ -19,14 +23,25 @@
       position: absolute;
       top: 0;
       left: 0;
-      transition:
-        fill 0.2s ease,
-        stroke 0.2s ease;
+
+      path {
+        transition:
+          fill 0.2s ease,
+          stroke 0.2s ease;
+      }
     }
   }
 
   &__info {
     @include regular16;
     color: $grey300;
+  }
+}
+
+@media screen and (max-width: $mob) {
+  .pagination {
+    &__btn {
+      @include sizes(20px, 20px);
+    }
   }
 }
