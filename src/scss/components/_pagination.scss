@@ -17,6 +17,17 @@
       }
     }
 
+    &:active {
+      svg path:first-child {
+        fill: $blue400;
+        stroke: $blue400;
+      }
+
+      svg path:last-child {
+        stroke: $white;
+      }
+    }
+
     svg {
       fill: none;
       stroke: $grey300;

@@ -48,6 +48,11 @@
 
       .cab__content {
         @include flexCenter;
+        background-color: $white;
+      }
+
+      .cab__desc-notify {
+        border: none;
       }
 
       .cab__desc-infos {
@@ -326,6 +331,7 @@
       align-items: flex-start;
       column-gap: 5px;
       max-width: 100%;
+      width: 100%;
       padding: 10px 12px;
       border-top: 1px solid $blue400;
 

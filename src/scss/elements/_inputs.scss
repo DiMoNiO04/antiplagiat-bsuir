@@ -167,5 +167,10 @@
     &--pass .input__input {
       padding-right: 36px;
     }
+
+    &__error {
+      font-size: 12px;
+      line-height: 14px;
+    }
   }
 }

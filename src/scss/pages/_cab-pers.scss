@@ -3,6 +3,8 @@
     @include flexColumn;
     row-gap: 25px;
     padding: 50px;
+    background-color: $white;
+    border-radius: 12px;
   }
 
   &__icon {
@@ -118,6 +120,7 @@
     &__content {
       padding: 20px 12px;
       row-gap: 20px;
+      border-radius: 4px;
     }
 
     &__icon {
