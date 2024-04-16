@@ -15,7 +15,7 @@
 
   &--results {
     .cab__header {
-      grid-template-columns: 7% 25% 12% 13% 38%;
+      grid-template-columns: 7% 25% 12% 13% 32% 4%;
     }
   }
 
@@ -77,6 +77,7 @@
 
   &__header-btn {
     @include sizes(20px, 20px);
+    flex-shrink: 0;
 
     svg {
       stroke: none;
@@ -279,6 +280,12 @@
       }
     }
 
+    &--results {
+      .cab__header {
+        grid-template-columns: 7% 34% 13% 14% 16% 7%;
+      }
+    }
+
     &__item {
       padding: 5px 25px;
       grid-template-columns: 35% 20% 23% 12% 3%;
@@ -320,6 +327,7 @@
       column-gap: 5px;
       max-width: 100%;
       padding: 10px 12px;
+      border-top: 1px solid $blue400;
 
       svg {
         @include sizes(20px, 20px);
@@ -336,6 +344,7 @@
       background-color: $white;
       border-radius: 4px;
       padding: 0;
+      position: relative;
 
       &:not(:last-child) {
         margin-bottom: 5px;
@@ -404,7 +413,10 @@
       width: 100%;
       justify-content: center;
       padding: 10px 12px;
-      border-bottom: 1px solid $blue400;
+    }
+
+    &__header {
+      display: none;
     }
   }
 }
@@ -413,10 +425,6 @@
   .cab {
     &__titles {
       margin-bottom: 10px;
-    }
-
-    &__header {
-      display: none;
     }
 
     &__titles-left {

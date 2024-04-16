@@ -68,6 +68,12 @@
   }
 }
 
+@media screen and (max-width: $laptop) {
+  .search {
+    width: 440px;
+  }
+}
+
 @media screen and (max-width: $tablet) {
   .search {
     width: 100%;

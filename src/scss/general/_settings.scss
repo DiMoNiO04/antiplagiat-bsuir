@@ -17,8 +17,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.disable-scroll {
-  top: 0 !important;
+@media screen and (min-width: $laptop) {
+  .disable-scroll {
+    top: 0 !important;
+  }
 }
 
 body {
