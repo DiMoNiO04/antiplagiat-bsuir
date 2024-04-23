@@ -9,8 +9,6 @@ tippy('.js-notify', {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const isTextMoreThanTwoLines = (text) => text.split('\n').length >= 2;
-
   const files = document.querySelectorAll('.js-notify-tippy');
 
   if (files && window.innerWidth > 1100) {
@@ -21,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const txtHeight = text.scrollHeight;
         const height = 24;
 
-        if (isTextMoreThanTwoLines(txt) && txtHeight > height) {
+        if (txt.split('\n').length >= 2 && txtHeight > height) {
           tippy(docDownloadLink, {
             content: txt,
             placement: 'bottom',
