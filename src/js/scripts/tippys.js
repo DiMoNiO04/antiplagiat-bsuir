@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 document.addEventListener('DOMContentLoaded', () => {
   const files = document.querySelectorAll('.js-notify-tippy');
   console.log(files);
