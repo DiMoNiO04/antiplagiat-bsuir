@@ -1,13 +1,4 @@
 /* eslint-disable no-undef */
-tippy('.js-notify', {
-  content(reference) {
-    return reference.getAttribute('data-notify');
-  },
-  placement: 'bottom',
-  animation: 'fade',
-  maxWidth: '200px',
-});
-
 document.addEventListener('DOMContentLoaded', () => {
   const files = document.querySelectorAll('.js-notify-tippy');
   console.log(files);
@@ -39,3 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+if (document.querySelector('.js-notify')) {
+  tippy('.js-notify', {
+    content(reference) {
+      return reference.getAttribute('data-notify');
+    },
+    placement: 'bottom',
+    animation: 'fade',
+    maxWidth: '200px',
+  });
+}
