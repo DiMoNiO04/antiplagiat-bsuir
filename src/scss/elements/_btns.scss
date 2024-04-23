@@ -41,6 +41,28 @@
   }
 }
 
+.btn-up {
+  @include sizes(40px, 40px);
+  @include flexCenter;
+  background-color: $blue300;
+  border-radius: 50%;
+  @include transition(background-color);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+
+  svg {
+    fill: $white;
+    @include sizes(28px, 28px);
+    transform: rotate(180deg);
+  }
+
+  @include hover {
+    background-color: $blue400;
+  }
+}
+
 @media screen and (max-width: $mob) {
   .btn {
     border-radius: 4px;
@@ -53,5 +75,9 @@
     svg {
       @include sizes(18px, 18px);
     }
+  }
+
+  .btn-up {
+    display: flex;
   }
 }

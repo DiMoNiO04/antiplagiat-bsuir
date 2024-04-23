@@ -81,6 +81,7 @@
   }
 
   &__header-btn {
+    display: none;
     @include sizes(20px, 20px);
     flex-shrink: 0;
 
@@ -138,11 +139,6 @@
     align-items: center;
     column-gap: 50px;
     margin: 0 0 0 auto;
-  }
-
-  &__desc-counts {
-    @include regular16;
-    color: $grey300;
   }
 
   &__desc-notify {
@@ -287,7 +283,7 @@
 
     &--results {
       .cab__header {
-        grid-template-columns: 7% 34% 13% 14% 16% 7%;
+        grid-template-columns: 7% 33.5% 13% 14% 16.5% 7%;
       }
     }
 
@@ -384,7 +380,7 @@
     &__item-block {
       div:not(.cab__item-status) {
         &:last-child {
-          @include croppingText(2);
+          -webkit-line-clamp: inherit;
         }
       }
 
@@ -409,10 +405,6 @@
 
     &__desc-content {
       flex-direction: column-reverse;
-    }
-
-    &__desc-counts {
-      display: none;
     }
 
     &__desc-infos {

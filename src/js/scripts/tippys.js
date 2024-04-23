@@ -5,4 +5,31 @@ tippy('.js-notify', {
   },
   placement: 'bottom',
   animation: 'fade',
+  maxWidth: '200px',
 });
+
+const isTextMoreThanTwoLines = (text) => text.split('\n').length >= 2;
+
+const files = document.querySelectorAll('.js-notify-tippy');
+
+if (files && window.innerWidth > 1100) {
+  files.forEach((docDownloadLink) => {
+    docDownloadLink.addEventListener('mouseover', (event) => {
+      const text = event.currentTarget;
+      const txt = text.textContent;
+      const txtHeight = text.scrollHeight;
+      const height = 24;
+
+      if (isTextMoreThanTwoLines(txt) && txtHeight > height) {
+        tippy(docDownloadLink, {
+          content: txt,
+          placement: 'bottom',
+          arrow: true,
+          theme: 'light',
+          maxWidth: '400px',
+          followCursor: true,
+        });
+      }
+    });
+  });
+}
