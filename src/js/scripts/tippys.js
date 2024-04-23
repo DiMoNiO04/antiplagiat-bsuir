@@ -1,18 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   const files = document.querySelectorAll('.js-notify-tippy');
-  console.log(files);
 
   if (files && window.innerWidth > 1100) {
-    console.log('true');
     files.forEach((file) => {
-      console.log(file);
       file.addEventListener('mouseover', (event) => {
         const text = event.currentTarget;
         const txt = text.textContent;
         const txtHeight = text.scrollHeight;
         const height = 24;
-
-        console.log(txt, txtHeight);
 
         if (txt.split('\n').length >= 2 && txtHeight > height) {
           console.log('заебок');
