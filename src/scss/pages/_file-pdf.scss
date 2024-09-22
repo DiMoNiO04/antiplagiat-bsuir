@@ -112,6 +112,83 @@
     @include flexCenterStart;
     column-gap: 12mm;
   }
+
+  &__results-items {
+    @include flexColumn;
+    row-gap: 0.85mm;
+  }
+
+  &__results-item {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 3.4mm;
+  }
+
+  &__results-title {
+    color: #646464;
+    font-weight: 500;
+    font-size: 2.7mm;
+    line-height: 3.5mm;
+    width: 24.5mm;
+  }
+
+  &__results-percent {
+    color: #03102c;
+    font-weight: 500;
+    font-size: 2.7mm;
+    line-height: 3.5mm;
+  }
+
+  &__results-bar {
+    position: relative;
+    margin: auto;
+
+    &--sov {
+      div {
+        &:last-child {
+          border-bottom: 0.8mm solid #ff6b00;
+        }
+      }
+    }
+
+    &--orig {
+      div {
+        &:last-child {
+          border-bottom: 0.8mm solid #3b547f;
+        }
+      }
+    }
+
+    div {
+      border-radius: 0.8mm;
+
+      &:first-child {
+        width: 51mm;
+        border-bottom: 0.8mm solid #ebf1ff;
+      }
+
+      &:last-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+    }
+  }
+}
+
+@media print {
+  .info__results-bar div {
+    background-color: #ebf1ff !important;
+  }
+
+  .info__results-bar--sov div:last-child {
+    background-color: #ff6b00 !important;
+  }
+
+  .info__results-bar--orig div:last-child {
+    background-color: #3b547f !important;
+  }
 }
 
 .border {
