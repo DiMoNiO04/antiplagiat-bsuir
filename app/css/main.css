@@ -161,13 +161,13 @@ li {
   list-style-type: none;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -394,10 +394,27 @@ main {
   opacity: 0;
   visibility: hidden;
   z-index: -2;
-  -webkit-transition: z-index 0.2s ease, opacity 0.2s ease, visibility 0.2s ease, -webkit-transform 0.2s ease;
-  transition: z-index 0.2s ease, opacity 0.2s ease, visibility 0.2s ease, -webkit-transform 0.2s ease;
-  transition: z-index 0.2s ease, opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
-  transition: z-index 0.2s ease, opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-transition:
+    z-index 0.2s ease,
+    opacity 0.2s ease,
+    visibility 0.2s ease,
+    -webkit-transform 0.2s ease;
+  transition:
+    z-index 0.2s ease,
+    opacity 0.2s ease,
+    visibility 0.2s ease,
+    -webkit-transform 0.2s ease;
+  transition:
+    z-index 0.2s ease,
+    opacity 0.2s ease,
+    visibility 0.2s ease,
+    transform 0.2s ease;
+  transition:
+    z-index 0.2s ease,
+    opacity 0.2s ease,
+    visibility 0.2s ease,
+    transform 0.2s ease,
+    -webkit-transform 0.2s ease;
 }
 .input__input {
   background-color: #ebf1ff;
@@ -450,16 +467,22 @@ main {
   opacity: 0;
   visibility: hidden;
 }
-.input__btn, .input__btn-notify {
+.input__btn,
+.input__btn-notify {
   width: 25px;
   height: 25px;
   position: absolute;
   right: 20px;
   bottom: calc(50% - 25px);
-  -webkit-transition: opacity 0.2s ease, visibility 0.2s ease;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  -webkit-transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
 }
-.input__btn svg, .input__btn-notify svg {
+.input__btn svg,
+.input__btn-notify svg {
   stroke: none;
   -webkit-transition: fill 0.2s ease;
   transition: fill 0.2s ease;
@@ -505,7 +528,8 @@ main {
     padding: 5px 14px;
     border-radius: 4px;
   }
-  .input__btn, .input__btn-notify {
+  .input__btn,
+  .input__btn-notify {
     right: 10px;
     width: 18px;
     height: 18px;
@@ -551,7 +575,9 @@ main {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    -webkit-transform 0.2s ease;
   width: 20px;
   height: 20px;
 }
@@ -560,7 +586,9 @@ main {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    -webkit-transform 0.2s ease;
 }
 .dropdown__headline {
   font-size: 14px;
@@ -586,8 +614,12 @@ main {
   background-color: #ffffff;
   border-radius: 8px;
   padding: 14px;
-  -webkit-transition: border 0.2s ease, border-radius 0.2s ease;
-  transition: border 0.2s ease, border-radius 0.2s ease;
+  -webkit-transition:
+    border 0.2s ease,
+    border-radius 0.2s ease;
+  transition:
+    border 0.2s ease,
+    border-radius 0.2s ease;
   border: 1px solid transparent;
 }
 @media (any-hover: hover) {
@@ -720,8 +752,16 @@ main {
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 45px;
-  -webkit-transition: border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease, visibility 0.2s ease;
-  transition: border-color 0.2s ease, background 0.2s ease, opacity 0.2s ease, visibility 0.2s ease;
+  -webkit-transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    opacity 0.2s ease,
+    visibility 0.2s ease;
 }
 .drag-area__form.--active {
   border-color: #3b547f;
@@ -791,7 +831,8 @@ main {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.drag-area__sm, .drag-area__up {
+.drag-area__sm,
+.drag-area__up {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -799,7 +840,8 @@ main {
   text-align: center;
 }
 @media screen and (max-width: 767px) {
-  .drag-area__sm, .drag-area__up {
+  .drag-area__sm,
+  .drag-area__up {
     font-size: 14px;
     line-height: 18px;
   }
@@ -824,7 +866,8 @@ main {
   .drag-area__btn {
     width: 100%;
   }
-  .drag-area__sm, .drag-area__up {
+  .drag-area__sm,
+  .drag-area__up {
     text-wrap: balance;
   }
 }
@@ -858,8 +901,14 @@ main {
   visibility: hidden;
   background-color: #fff;
   z-index: -2;
-  -webkit-transition: opacity 0.2s ease, visibility 0.2s ease, z-index 0.2s ease;
-  transition: opacity 0.2s ease, visibility 0.2s ease, z-index 0.2s ease;
+  -webkit-transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease,
+    z-index 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease,
+    z-index 0.2s ease;
 }
 .more-btns__content.--active {
   opacity: 1;
@@ -921,8 +970,12 @@ main {
 }
 .more-btns__link-icon svg {
   position: absolute;
-  -webkit-transition: opacity 0.2s ease, visibility 0.2s ease;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  -webkit-transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
 }
 .more-btns__link-icon svg:first-child {
   fill: none;
@@ -1003,7 +1056,9 @@ main {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    -webkit-transform 0.2s ease;
   width: 25px;
   height: 25px;
 }
@@ -1012,8 +1067,12 @@ main {
   stroke: none;
   background: none;
   border-radius: 50%;
-  -webkit-transition: fill 0.2s ease, background 0.2s ease;
-  transition: fill 0.2s ease, background 0.2s ease;
+  -webkit-transition:
+    fill 0.2s ease,
+    background 0.2s ease;
+  transition:
+    fill 0.2s ease,
+    background 0.2s ease;
 }
 .header__menu {
   border: 1px solid #3b547f;
@@ -1084,8 +1143,12 @@ main {
   height: 20px;
 }
 .header__menu-icon svg {
-  -webkit-transition: opacity 0.2s ease, visibility 0.2s ease;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  -webkit-transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
   position: absolute;
 }
 .header__menu-icon svg:first-child {
@@ -1161,8 +1224,12 @@ main {
   right: 15px;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 0.2s ease, visibility 0.2s ease;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  -webkit-transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
 }
 .search__btn-reset.--active {
   opacity: 1;
@@ -1171,18 +1238,21 @@ main {
 .search__btn-reset svg {
   stroke-width: 2;
 }
-.search__btn-reset, .search__btn-submit {
+.search__btn-reset,
+.search__btn-submit {
   width: 24px;
   height: 24px;
   position: absolute;
   top: calc(50% - 12px);
 }
 @media (any-hover: hover) {
-  .search__btn-reset:hover svg, .search__btn-submit:hover svg {
+  .search__btn-reset:hover svg,
+  .search__btn-submit:hover svg {
     stroke: #3b547f;
   }
 }
-.search__btn-reset svg, .search__btn-submit svg {
+.search__btn-reset svg,
+.search__btn-submit svg {
   stroke-width: 1.5;
   stroke: #b0b0b0;
   fill: none;
@@ -1201,7 +1271,8 @@ main {
   }
 }
 @media screen and (max-width: 767px) {
-  .search__btn-reset, .search__btn-submit {
+  .search__btn-reset,
+  .search__btn-submit {
     width: 18px;
     height: 18px;
     top: calc(50% - 9px);
@@ -1257,8 +1328,12 @@ main {
   left: 0;
 }
 .pagination__btn svg path {
-  -webkit-transition: fill 0.2s ease, stroke 0.2s ease;
-  transition: fill 0.2s ease, stroke 0.2s ease;
+  -webkit-transition:
+    fill 0.2s ease,
+    stroke 0.2s ease;
+  transition:
+    fill 0.2s ease,
+    stroke 0.2s ease;
 }
 .pagination__info {
   font-size: 16px;
@@ -1492,7 +1567,9 @@ main {
   .modal-load__input {
     margin-bottom: 17px;
   }
-  .modal-load__input, .modal-load__dropdown, .modal-load__title {
+  .modal-load__input,
+  .modal-load__dropdown,
+  .modal-load__title {
     padding: 0 12px;
   }
   .modal-load__dropdown {
@@ -1525,7 +1602,7 @@ main {
     padding: 12px;
   }
   .modal-doc__item {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr) [1];
     grid-template-columns: repeat(1, 1fr);
   }
   .modal-doc__item:not(:last-child) {
@@ -2061,7 +2138,7 @@ main {
     line-height: 18px;
   }
   .cab__item {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr) [1];
     grid-template-columns: repeat(1, 1fr);
     background-color: #ffffff;
     border-radius: 4px;
@@ -2391,7 +2468,7 @@ main {
 }
 @media screen and (max-width: 1100px) {
   .cab-role__block {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr) [1];
     grid-template-columns: repeat(1, 1fr);
     background-color: #ffffff;
     row-gap: 12px;
@@ -2523,7 +2600,7 @@ main {
     column-gap: 15px;
   }
   .cab-results__block {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr) [1];
     grid-template-columns: repeat(1, 1fr);
     background-color: #ffffff;
     border-radius: 4px;

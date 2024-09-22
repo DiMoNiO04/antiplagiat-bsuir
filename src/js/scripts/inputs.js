@@ -1,18 +1,18 @@
 const changeVisiblePassword = () => {
-  const passInputs = document.querySelectorAll('.input--pass');
+  const passInputs = document.querySelectorAll(".input--pass");
 
   if (passInputs) {
     passInputs.forEach((passInput) => {
-      const input = passInput.querySelector('input');
-      const btnPass = passInput.querySelector('.input__btn');
+      const input = passInput.querySelector("input");
+      const btnPass = passInput.querySelector(".input__btn");
 
-      btnPass.addEventListener('mousedown', (event) => {
+      btnPass.addEventListener("mousedown", (event) => {
         event.preventDefault();
-        btnPass.classList.toggle('--open');
-        if (input.getAttribute('type') === 'text') {
-          input.setAttribute('type', 'password');
+        btnPass.classList.toggle("--open");
+        if (input.getAttribute("type") === "text") {
+          input.setAttribute("type", "password");
         } else {
-          input.setAttribute('type', 'text');
+          input.setAttribute("type", "text");
         }
         input.focus();
       });
@@ -21,40 +21,40 @@ const changeVisiblePassword = () => {
 };
 
 const changeInputWithError = () => {
-  const inputErrors = document.querySelectorAll('.input.--error');
+  const inputErrors = document.querySelectorAll(".input.--error");
 
   if (inputErrors) {
     inputErrors.forEach((inputError) => {
-      inputError.addEventListener('input', function () {
-        this.classList.remove('--error');
+      inputError.addEventListener("input", function () {
+        this.classList.remove("--error");
       });
     });
   }
 };
 
 const changeVisibleResetSearch = () => {
-  const search = document.querySelector('.search');
+  const search = document.querySelector(".search");
 
   if (search) {
-    const btnRes = search.querySelector('.search__btn-reset');
-    const input = search.querySelector('input');
+    const btnRes = search.querySelector(".search__btn-reset");
+    const input = search.querySelector("input");
 
-    input.addEventListener('input', () => {
+    input.addEventListener("input", () => {
       if (input.value) {
-        btnRes.classList.add('--active');
+        btnRes.classList.add("--active");
       } else {
-        btnRes.classList.remove('--active');
+        btnRes.classList.remove("--active");
       }
     });
 
-    btnRes.addEventListener('click', () => {
-      btnRes.classList.remove('--active');
+    btnRes.addEventListener("click", () => {
+      btnRes.classList.remove("--active");
       input.focus();
     });
   }
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   changeVisiblePassword();
   changeInputWithError();
   changeVisibleResetSearch();

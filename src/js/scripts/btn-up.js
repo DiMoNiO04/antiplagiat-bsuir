@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const btnUp = document.querySelector('.js-btn-up');
+document.addEventListener("DOMContentLoaded", () => {
+  const btnUp = document.querySelector(".js-btn-up");
 
-  btnUp.addEventListener('click', () => {
+  btnUp.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   });
 });

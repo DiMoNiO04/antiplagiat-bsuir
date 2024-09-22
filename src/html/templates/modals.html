@@ -1,13 +1,23 @@
 <div class="graph-modal">
-  <div class="graph-modal__container modal-doc" role="dialog" aria-modal="true" data-graph-target="modal-doc">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
+  <div
+    class="graph-modal__container modal-doc"
+    role="dialog"
+    aria-modal="true"
+    data-graph-target="modal-doc"
+  >
+    <button
+      class="btn-reset js-modal-close graph-modal__close"
+      aria-label="Закрыть модальное окно"
+    >
       <svg>
         <use xlink:href="assets/img/sprite.svg#modal-close"></use>
       </svg>
     </button>
     <div class="modal-doc__container">
       <h2 class="modal-doc__title">Оценить документ</h2>
-      <p class="modal-doc__subtitle">Вы уверены, что готовы вынести окончательное решение о данном документе?</p>
+      <p class="modal-doc__subtitle">
+        Вы уверены, что готовы вынести окончательное решение о данном документе?
+      </p>
       <div class="modal-doc__items">
         <div class="modal-doc__item">
           <div>ФИО</div>
@@ -23,17 +33,31 @@
         </div>
       </div>
       <div class="modal-doc__btns">
-        <button type="button" class="modal-doc__btn btn-sec js-modal-close js-result-no-success">
+        <button
+          type="button"
+          class="modal-doc__btn btn-sec js-modal-close js-result-no-success"
+        >
           <span>Отправить на доработку</span>
         </button>
-        <button type="button" class="modal-doc__btn btn-def js-modal-close js-result-success">
+        <button
+          type="button"
+          class="modal-doc__btn btn-def js-modal-close js-result-success"
+        >
           <span>Зачтен</span>
         </button>
       </div>
     </div>
   </div>
-  <div class="graph-modal__container modal-load" role="dialog" aria-modal="true" data-graph-target="modal-load">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
+  <div
+    class="graph-modal__container modal-load"
+    role="dialog"
+    aria-modal="true"
+    data-graph-target="modal-load"
+  >
+    <button
+      class="btn-reset js-modal-close graph-modal__close"
+      aria-label="Закрыть модальное окно"
+    >
       <svg>
         <use xlink:href="assets/img/sprite.svg#modal-close"></use>
       </svg>
@@ -42,9 +66,20 @@
       <h2 class="modal-load__title">Загрузка документа</h2>
       <form class="modal-load__form" id="modal-doc-form">
         <div class="modal-load__input input">
-          <label class="input__label" for="name">Название работы <span>*</span></label>
-          <input autocomplete="off" class="input__input" type="text" placeholder="Название работы" name="name" />
-          <div class="input__btn-notify js-notify" data-notify="Менее 8 символов">
+          <label class="input__label" for="name"
+            >Название работы <span>*</span></label
+          >
+          <input
+            autocomplete="off"
+            class="input__input"
+            type="text"
+            placeholder="Название работы"
+            name="name"
+          />
+          <div
+            class="input__btn-notify js-notify"
+            data-notify="Менее 8 символов"
+          >
             <svg>
               <use xlink:href="assets/img/sprite.svg#input-error"></use>
             </svg>
@@ -107,7 +142,13 @@
           </div>
           <div class="drag-area__files"></div>
         </div>
-        <button class="modal-load__btn btn btn-def" type="submit" form="modal-doc-form">Проверить</button>
+        <button
+          class="modal-load__btn btn btn-def"
+          type="submit"
+          form="modal-doc-form"
+        >
+          Проверить
+        </button>
       </form>
     </div>
   </div>
@@ -117,14 +158,19 @@
     aria-modal="true"
     data-graph-target="modal-protection"
   >
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">
+    <button
+      class="btn-reset js-modal-close graph-modal__close"
+      aria-label="Закрыть модальное окно"
+    >
       <svg>
         <use xlink:href="assets/img/sprite.svg#modal-close"></use>
       </svg>
     </button>
     <div class="modal-doc__container">
       <h2 class="modal-doc__title">Отправить документ на защиту</h2>
-      <p class="modal-doc__subtitle">Вы уверены, что готовы отправить документ на защиту необратима?</p>
+      <p class="modal-doc__subtitle">
+        Вы уверены, что готовы отправить документ на защиту необратима?
+      </p>
       <div class="modal-doc__items">
         <div class="modal-doc__item">
           <div>Оригинальность</div>
