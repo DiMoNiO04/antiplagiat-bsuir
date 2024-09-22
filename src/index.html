@@ -28,26 +28,19 @@
         <h2>Модальные окна:</h2>
         <ol>
           <li>
-            <button class="btn-reset" data-graph-path="modal-doc">
-              Отправить документ на защиту
-            </button>
+            <button class="btn-reset" data-graph-path="modal-doc">Отправить документ на защиту</button>
           </li>
           <li>
-            <button class="btn-reset" data-graph-path="modal-load">
-              Загрузка на проверку
-            </button>
+            <button class="btn-reset" data-graph-path="modal-load">Загрузка на проверку</button>
           </li>
           <li>
-            <button class="btn-reset" data-graph-path="modal-protection">
-              Отправить документ на защиту
-            </button>
+            <button class="btn-reset" data-graph-path="modal-protection">Отправить документ на защиту</button>
           </li>
         </ol>
       </div>
     </main>
 
-    @include('html/templates/modals.html')
-    @include('html/templates/scripts.html')
+    @include('html/templates/modals.html') @include('html/templates/scripts.html')
   </body>
 
   <style>
@@ -65,12 +58,7 @@
       height: 100%;
       width: 100%;
       min-width: 40rem;
-      background: linear-gradient(
-        90.31deg,
-        #7794d3 -26.48%,
-        #5c72a2 58.31%,
-        #7794d3 126.04%
-      );
+      background: linear-gradient(90.31deg, #7794d3 -26.48%, #5c72a2 58.31%, #7794d3 126.04%);
       color: blue;
     }
 
@@ -102,7 +90,7 @@
     }
 
     .base ol > li:before {
-      content: "(" counter(list) ") ";
+      content: '(' counter(list) ') ';
       counter-increment: list;
     }
 

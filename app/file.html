@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#111111" />
+    <title>File PDF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="pdf-container">
+      <div class="pdf-header">
+        <h1>Документ для печати</h1>
+        <p>Дата создания: {{ date }}</p>
+      </div>
+      <div class="pdf-content">
+        <h2>Введение</h2>
+        <p>
+          Этот документ представляет собой образец контента для печати в формате PDF. Здесь вы можете разместить
+          основную информацию, которую нужно включить в PDF-документ.
+        </p>
+        <h2>Основная информация</h2>
+        <p>
+          Основная часть контента будет отображаться в этом разделе. Вы можете использовать таблицы, списки, изображения
+          и другие элементы разметки, чтобы представить информацию в нужном формате.
+        </p>
+        <table class="pdf-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Название</th>
+              <th>Описание</th>
+              <th>Количество</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Пример элемента</td>
+              <td>Описание элемента</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Пример элемента 2</td>
+              <td>Описание элемента 2</td>
+              <td>5</td>
+            </tr>
+            <!-- Добавьте дополнительные строки по мере необходимости -->
+          </tbody>
+        </table>
+        <h2>Заключение</h2>
+        <p>
+          В этом разделе можно добавить заключение или дополнительную информацию, которая должна быть включена
+          в PDF-документ.
+        </p>
+      </div>
+      <div class="pdf-footer"><p>© 2024 Все права защищены. Имя компании.</p></div>
+    </div>
+  </body>
+</html>
