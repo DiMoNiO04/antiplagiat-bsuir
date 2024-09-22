@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 document.addEventListener('DOMContentLoaded', () => {
   const files = document.querySelectorAll('.js-notify-tippy');
 
@@ -10,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const height = 24;
 
         if (txt.split('\n').length >= 2 && txtHeight > height) {
-          console.log('заебок');
           tippy(file, {
             content: txt,
             placement: 'bottom',

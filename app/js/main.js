@@ -213,7 +213,7 @@ const changeInputWithError = () => {
   const inputErrors = document.querySelectorAll('.input.--error');
   if (inputErrors) {
     inputErrors.forEach(inputError => {
-      inputError.addEventListener('input', function () {
+      inputError.addEventListener('input', function handle() {
         this.classList.remove('--error');
       });
     });
@@ -357,6 +357,7 @@ document.addEventListener('DOMContentLoaded', () => {
   \**********************************/
 /***/ (() => {
 
+/* eslint-disable no-undef */
 document.addEventListener('DOMContentLoaded', () => {
   const files = document.querySelectorAll('.js-notify-tippy');
   if (files && window.innerWidth > 1100) {
@@ -367,7 +368,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const txtHeight = text.scrollHeight;
         const height = 24;
         if (txt.split('\n').length >= 2 && txtHeight > height) {
-          console.log('заебок');
           tippy(file, {
             content: txt,
             placement: 'bottom',
@@ -706,4 +706,3 @@ const modal = new graph_modal__WEBPACK_IMPORTED_MODULE_0__["default"]();
 
 /******/ })()
 ;
-//# sourceMappingURL=main.js.map

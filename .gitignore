@@ -7,9 +7,6 @@ anonymous-cli-metrics.json
 .vscode
 .ecrc
 .eslintignore
-.eslintrc.js
 .htmlhintrc
-.prettierrc.json
 .stylelintrc.json
-gulpfile.js
 _update-notifier-last-checked

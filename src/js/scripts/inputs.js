@@ -25,7 +25,7 @@ const changeInputWithError = () => {
 
   if (inputErrors) {
     inputErrors.forEach((inputError) => {
-      inputError.addEventListener('input', function () {
+      inputError.addEventListener('input', function handle() {
         this.classList.remove('--error');
       });
     });
